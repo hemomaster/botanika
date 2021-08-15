@@ -50,61 +50,65 @@
     </header>
     <main>
       <article class="promo">
-        <section class="promo__content">
-          <h1 class="title title__primary promo__title">
-            Авторские букеты в Петербурге
-          </h1>
-          <p class="promo__slogan">
-            Оригинальные свежие букеты с доставкой по всему городу
-          </p>
-          <a href="#" class="btn btn__primary promo__link">Смотреть каталог</a>
-        </section>
-        <aside class="promo__media">
-          <figure>
-            <img
-              src="./images/promo-1.jpg"
-              alt="свежий свадебный букет"
-              class="promo__media-img"
-              width="386"
-            /><img
-              src="./images/promo-2.jpg"
-              alt="свежий свадебный букет"
-              class="promo__media-img"
-              width="386"
-            />
-          </figure>
-        </aside>
+        <div class="container promo__container">
+          <section class="promo__content">
+            <h1 class="title title__primary promo__title">
+              Авторские букеты в Петербурге
+            </h1>
+            <strong class="promo__slogan">
+              Оригинальные свежие букеты с доставкой по всему городу
+            </strong>
+            <a href="#" class="btn btn__primary promo__link"
+              >Смотреть каталог</a
+            >
+          </section>
+          <aside class="promo__media">
+            <figure>
+              <img
+                src="./images/promo-1.jpg"
+                alt="свежий свадебный букет"
+                class="promo__media-img"
+                width="386"
+              /><img
+                src="./images/promo-2.jpg"
+                alt="свежий свадебный букет"
+                class="promo__media-img"
+                width="386"
+              />
+            </figure>
+          </aside>
+        </div>
       </article>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="container advantages__container">
           <article class="advantages__descr">
             <h3 class="advantages__descr-title">Быстрая доставка</h3>
-            <p class="advantages__descr-text">
+            <span class="advantages__descr-text">
               Можем собрать букет и передать его в доставку всего за час.
-            </p>
+            </span>
           </article>
           <article class="advantages__descr">
             <h3 class="advantages__descr-title">Всегда свежие цветы</h3>
-            <p class="advantages__descr-text">
+            <span class="advantages__descr-text">
               Тщательно следим за состоянием цветов, а опытные флористы отбирают
               для букетов каждый цветок.
-            </p>
+            </span>
           </article>
           <article class="advantages__descr">
             <h3 class="advantages__descr-title">Отправляем фото цветов</h3>
-            <p class="advantages__descr-text">
+            <span class="advantages__descr-text">
               Перед доставкой сделаем фотографию букета и отправим вам.
-            </p>
+            </span>
           </article>
         </div>
       </section>
       <section class="popular">
-        <div class="container">
+        <div class="container popular__container">
           <h2 class="title title__regular popular__title">Популярные букеты</h2>
           <article class="popular__slide">
-            <div class="popular__slide-info">
-              <h3 class="title popular__slide-title">Букет «Нежность»</h3>
+            <section class="popular__slide-info">
+              <h3 class="subtitle popular__slide-subtitle">Букет «Нежность»</h3>
               <p class="popular__slide-text">
                 Элегантный букет, который станет отличным подарком на день
                 рождения или юбилей.
@@ -112,19 +116,23 @@
                 <srtong class="popular__price">3600 руб.</srtong>
               </p>
               <button class="btn btn__primary popular__btn">Заказать</button>
-            </div>
-            <figure>
-              <img
-                src="./images/slide-1.png"
-                alt="популярный букет нежность"
-                class="popular__media"
-              />
-            </figure>
+            </section>
+            <aside class="popular__media">
+              <figure>
+                <img
+                  src="./images/slide-1.png"
+                  alt="популярный букет нежность"
+                  class="popular__media-img"
+                />
+              </figure>
+            </aside>
           </article>
         </div>
       </section>
       <section class="catalog">
-        <h2 class="visually-hidden">Наш каталог букетов</h2>
+        <h2 class="visually-hidden">
+          Каталог букетов к свадьбе, празднику и на каждый день
+        </h2>
         <div class="container catalog__container">
           <a href="#" class="catalog__link">
             <figure class="catalog__media">
@@ -133,7 +141,7 @@
                 alt="свадебные букеты"
                 class="catalog__media-img"
               />
-              <figcaption>
+              <figcaption class="catalog__media-descr">
                 <h3
                   class="
                     title title__regular title__regular--link
@@ -153,7 +161,7 @@
                 alt="Букеты с пионами"
                 class="catalog__media-img"
               />
-              <figcaption>
+              <figcaption class="catalog__media-descr">
                 <h3
                   class="
                     title title__regular title__regular--link
@@ -175,7 +183,7 @@
                 alt="Букеты в ассортименте"
                 class="catalog__media-img"
               />
-              <figcaption>
+              <figcaption class="catalog__media-descr">
                 <h3
                   class="
                     title title__regular title__regular--link
@@ -209,7 +217,7 @@
             </p>
           </section>
           <aside class="discount__media">
-            <figure>
+            <figure class="discount__media">
               <img
                 src="./images/discount-bouquet.jpg"
                 alt="букеты со скидкой"
@@ -223,29 +231,29 @@
         <div class="container step__container">
           <h2 class="title title__regular">4 шага к идеальному букету</h2>
           <article class="step__descr">
-            <h3 class="step__descr-title">Заказ</h3>
-            <p class="step__descr-text">
+            <h3 class="subtitle step__descr-subtitle">Заказ</h3>
+            <span class="step__descr-text">
               Выбирите понравившейся букет из каталога и оформите заказ
-            </p>
+            </span>
           </article>
           <article class="step__descr">
-            <h3 class="step__descr-title">Уточнение деталей</h3>
-            <p class="step__descr-text">
+            <h3 class="subtitle step__descr-subtitle">Уточнение деталей</h3>
+            <span class="step__descr-text">
               Наш флорист позвонит вам после оформления заказа, чтобы уточнить
               детали
-            </p>
+            </span>
           </article>
           <article class="step__descr">
-            <h3 class="step__descr-title">Оплата</h3>
-            <p class="step__descr-text">
+            <h3 class="subtitle step__descr-subtitle">Оплата</h3>
+            <span class="step__descr-text">
               Оплатить заказ можно онлайн на сайте или при получении
-            </p>
+            </span>
           </article>
           <article class="step__descr">
-            <h3 class="step__descr-title">Доставка</h3>
-            <p class="step__descr-text">
+            <h3 class="subtitle step__descr-subtitle">Доставка</h3>
+            <span class="step__descr-text">
               Курьер позвонит за час до прибытия и доставит заказ вовремя
-            </p>
+            </span>
           </article>
         </div>
       </section>
