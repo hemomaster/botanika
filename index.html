@@ -10,39 +10,39 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Каталог</a>
+          <ul class="menu nav__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Каталог</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Доставка и оплата</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Доставка и оплата</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Отзывы</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
             </li>
-            <li class="nav__item">
+            <li class="menu__item">
               <a
                 href="#"
-                class="nav__link"
+                class="logo menu__logo"
                 aria-label="на главную"
                 title="Botanika"
               >
                 <img
                   src="./images/logo.svg"
                   alt="логотип компании Botanika"
-                  class="logo nav__link-logo"
+                  class="logo__img"
                   width="100"
                 />
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Спецпредложения</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Спецпредложения</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Корзина</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -103,10 +103,10 @@
           </article>
         </div>
       </section>
-      <section class="popular">
+      <article class="popular">
         <div class="container popular__container">
           <h2 class="title title__regular popular__title">Популярные букеты</h2>
-          <article class="popular__slide">
+          <div class="popular__inner">
             <section class="popular__slide-info">
               <h3 class="subtitle popular__slide-subtitle">Букет «Нежность»</h3>
               <p class="popular__slide-text">
@@ -118,18 +118,16 @@
               <button class="btn btn__primary popular__btn">Заказать</button>
             </section>
             <aside class="popular__media">
-              <figure>
-                <img
-                  src="./images/slide-1.png"
-                  alt="популярный букет нежность"
-                  class="popular__media-img"
-                  width="387"
-                />
-              </figure>
+              <img
+                src="./images/slide-1.png"
+                alt="популярный букет нежность"
+                class="popular__media-img"
+                width="387"
+              />
             </aside>
-          </article>
+          </div>
         </div>
-      </section>
+      </article>
       <section class="catalog">
         <h2 class="visually-hidden">
           Каталог букетов к свадьбе, празднику и на каждый день
@@ -221,14 +219,12 @@
             </p>
           </section>
           <aside class="discount__media">
-            <figure class="discount__media">
-              <img
-                src="./images/discount-bouquet.jpg"
-                alt="букеты со скидкой"
-                class="discount__media-img"
-                width="590"
-              />
-            </figure>
+            <img
+              src="./images/discount-bouquet.jpg"
+              alt="букеты со скидкой"
+              class="discount__media-img"
+              width="590"
+            />
           </aside>
         </div>
       </article>
@@ -310,22 +306,30 @@
           </section>
           <aside class="blog__media">
             <figure class="blog__media-group">
-              <img
-                src="./images/blog-1.jpg"
-                alt="свадебный букет"
-                class="blog__media-img"
-                width="285"
-              /><img
-                src="./images/blog-2.jpg"
-                alt="букет с пионами"
-                class="blog__media-img"
-                width="387"
-              /><img
-                src="./images/blog-3.jpg"
-                alt="букет на каждый день"
-                class="blog__media-img"
-                width="285"
-              />
+              <a href="#" class="blog__media-link">
+                <img
+                  src="./images/blog-1.jpg"
+                  alt="свадебный букет"
+                  class="blog__media-img"
+                  width="285"
+                />
+              </a>
+              <a href="#" class="blog__media-link">
+                <img
+                  src="./images/blog-2.jpg"
+                  alt="букет с пионами"
+                  class="blog__media-img"
+                  width="387"
+                />
+              </a>
+              <a href="#" class="blog__media-link">
+                <img
+                  src="./images/blog-3.jpg"
+                  alt="букет на каждый день"
+                  class="blog__media-img"
+                  width="285"
+                />
+              </a>
             </figure>
           </aside>
         </div>
@@ -358,7 +362,104 @@
           </div>
         </div>
       </section>
+      <section class="contact">
+        <figure class="contact__media">
+          <img
+            src="./images/map.jpg"
+            alt="Как добраться до botanika"
+            class="contact__media-img"
+            height="644"
+          />
+          <figcaption class="contact__media-info">
+            <h2 class="title title__regular contact__title">Мы ждем вас</h2>
+            <ul class="contact__list">
+              <li class="contact__item">
+                Приходите к нам:
+                <address class="contact__val">
+                  Санкт-Петербург, ул. Большая Конюшенная, 19
+                </address>
+              </li>
+              <li class="contact__item">
+                Режим работы:
+                <span class="contact__val">Пн-Вск, с 9-00 до 20-00</span>
+              </li>
+              <li class="contact__item">
+                Позвоните нам:
+                <a href="tel:+78129834719" class="contact__val"
+                  >+ 7 (812) 983-47-19</a
+                >
+              </li>
+              <li class="contact__item">
+                Напишите нам:
+                <a href="mailto:info@botanika.ru" class="contact__val"
+                  >info@botanika.ru</a
+                >
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </section>
     </main>
-    <footer class="footer"><div class="container">Подвал</div></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a
+          href="#"
+          class="logo footer__logo"
+          aria-label="на главную"
+          title="Botanika"
+        >
+          <img
+            src="./images/logo.svg"
+            alt="логотип компании Botanika"
+            class="logo__img"
+            width="100"
+          />
+        </a>
+        <ul class="menu footer__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Доставка и оплата</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Спецпредложения</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="social footer__social">
+          <li class="social__item">
+            <a
+              href="#"
+              class="
+                visually-hidden
+                social-icon social-icon--insta
+                social__link
+              "
+              >instagram</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              href="#"
+              class="visually-hidden social-icon social-icon--fb social__link"
+              >facebook</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              href="#"
+              class="visually-hidden social-icon social-icon--tw social__link"
+              >twitter</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
