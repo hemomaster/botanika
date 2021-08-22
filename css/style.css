@@ -1,0 +1,403 @@
+/* cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  /* unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/montserrat-medium-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-medium-webfont.woff") format("woff");
+  /* unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; */
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfairdisplaysc-regular-webfont.woff2") format("woff2"),
+    url("../fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  /* unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; */
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/playfairdisplaysc-bold-webfont.woff2") format("woff2"),
+    url("../fonts/playfairdisplaysc-bold-webfont.woff") format("woff");
+  /* unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; */
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfairdisplaysc-italic-webfont.woff2") format("woff2"),
+    url("../fonts/playfairdisplaysc-italic-webfont.woff") format("woff");
+  /* unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+blockquote {
+  margin: 0;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+body {
+  font: 400 16px/1.219 "Montserrat", sans-serif;
+  color: #ae7c78;
+}
+.container {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.d-block {
+  display: block;
+}
+
+/* ЛОГОТИП */
+.logo {
+}
+.logo__img {
+}
+
+/* МЕНЮ */
+.menu {
+}
+.menu__item {
+}
+.menu__link {
+}
+
+/* ЗАГОЛОВКИ */
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.title__primary {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.318;
+}
+.title__primary span {
+  font-style: italic;
+}
+.title__regular {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.333;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.title__regular--link {
+  color: #fff;
+}
+.title__regular--discount {
+  font-weight: normal;
+  font-size: 44px;
+  text-align: left;
+  color: #fff;
+}
+
+/* ПОДЗАГОЛОВОК */
+.subtitle {
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* КНОПКА */
+.btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn__primary {
+  padding: 30px 105px;
+  color: #fff;
+  background-color: #d89999;
+  border-radius: 40px;
+}
+
+/* СОЦ.СЕТИ */
+.social {
+}
+.social__item {
+}
+.social-icon {
+}
+.social__link {
+}
+.social-icon--insta {
+}
+.social-icon--fb {
+}
+.social-icon--tw {
+}
+
+/*  */
+.header {
+  padding: 16px 0;
+  border-top: 1px solid #ae7c78;
+  border-bottom: 1px solid #ae7c78;
+}
+.header__container {
+}
+.header__nav {
+}
+.header__logo {
+}
+.nav {
+}
+.nav__list {
+}
+
+/* ГЛАВНЫЙ ЭКРАН */
+.promo {
+}
+.promo__container {
+}
+.promo__content {
+}
+.promo__title {
+}
+.promo__slogan {
+  font-size: 24px;
+}
+.promo__link {
+}
+.promo__media {
+}
+.promo__media-img {
+}
+
+/* ПРЕИМУЩЕСТВА */
+.advantages {
+}
+.advantages__container {
+}
+.advantages__list {
+}
+.advantages__group {
+}
+.advantages__list-term {
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.advantages__list-text {
+}
+
+/* ПОПУЛЯРНОЕ */
+.popular {
+}
+.popular__container {
+}
+.popular__title {
+  margin-bottom: 36px;
+}
+.popular__slide {
+}
+.popular__slide-info {
+}
+.popular__slide-subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.popular__slide-text,
+.popular__size {
+  margin-bottom: 24px;
+}
+.popular__price {
+  margin-bottom: 64px;
+}
+.popular__btn {
+}
+.popular__slide-media {
+}
+.popular__slide-img {
+}
+
+/* КАТАЛОГ */
+.catalog {
+}
+.catalog__container {
+}
+.catalog__link {
+}
+.catalog__media {
+}
+.catalog__media-img {
+}
+.catalog__media-descr {
+}
+.catalog__media-title {
+  margin-bottom: 8px;
+}
+.catalog__media-subtitle {
+  color: #fff;
+}
+
+/* СКИДКИ */
+.discount {
+}
+.discount__container {
+  background-color: #ae7c78;
+}
+.discount__content {
+  padding: 40px 120px 60px 100px;
+}
+.discount__content__title {
+  margin-bottom: 24px;
+}
+.discount__content-text {
+  font-style: 24px;
+  color: #fff;
+}
+.discount__media {
+}
+.discount__media-img {
+}
+
+/* 4 ШАГА */
+.step {
+}
+.step__container {
+}
+.step__title {
+  margin-bottom: 36px;
+}
+.step__list {
+}
+.step__group {
+}
+.step__list-term {
+  margin-bottom: 8px;
+}
+.step__list-text {
+}
+
+/* НОВОСТИ */
+.blog {
+}
+.blog__container {
+}
+.blog__content {
+}
+.blog__title {
+  margin-bottom: 40px;
+}
+.blog__descr {
+  font-size: 24px;
+}
+.blog__social {
+}
+.blog__media {
+}
+.blog__media-link {
+}
+.blog__media-img {
+}
+
+/* ОТЗЫВЫ */
+.reviews {
+}
+.reviews__container {
+  padding: 40px 40px 60px;
+  border: 1px solid #ae7c78;
+}
+.reviews__title {
+  margin-bottom: 40px;
+}
+.reviews__inner {
+}
+.reviews__descr {
+}
+.reviews__list-text {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.reviews__descr-author {
+  text-align: center;
+}
+
+/* КОНТАКТЫ */
+.contact {
+}
+.contact__media {
+}
+.contact__media-img {
+}
+.contact__media-info {
+  padding: 40px 35px 65px;
+}
+.contact__title {
+  text-align: left;
+  margin-bottom: 42px;
+}
+.contact__list {
+}
+.contact__item:not(:last-child) {
+  margin-bottom: 31px;
+}
+.contact__label {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contact__val {
+  display: block;
+  font-style: normal;
+}
+
+/* ПОДВАЛ */
+.footer {
+  padding: 24px 0 40px;
+  background-color: #ae7c78;
+}
+.footer__container {
+}
+.footer__logo {
+}
+.footer__list {
+  color: #fff;
+}
+.footer__social {
+  color: #fff;
+}

@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Botanika</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <nav class="nav header__nav">
-          <a class="logo menu__logo">
+          <a class="logo header__logo">
             <img
               src="./images/logo.svg"
               alt="логотип компании Botanika"
@@ -18,7 +20,7 @@
               width="100"
             />
           </a>
-          <ul class="menu nav__list">
+          <ul class="list-reset menu nav__list">
             <li class="menu__item">
               <a href="#" class="menu__link">Каталог</a>
             </li>
@@ -46,11 +48,11 @@
         <div class="container promo__container">
           <div class="promo__content">
             <h1 class="title title__primary promo__title">
-              Авторские букеты в Петербурге
+              Авторские букеты <span class="d-block">в Петербурге</span>
             </h1>
-            <strong class="promo__slogan">
+            <span class="promo__slogan">
               Оригинальные свежие букеты с доставкой по всему городу
-            </strong>
+            </span>
             <a href="#" class="btn btn__primary promo__link"
               >Смотреть каталог</a
             >
@@ -106,7 +108,7 @@
                 Элегантный букет, который станет отличным подарком на день
                 рождения или юбилей.
                 <span class="popular__size">30 × 40 см</span>
-                <span class="popular__price">3600 руб.</span>
+                <span class="subtitle popular__price">3600 руб.</span>
               </p>
               <button class="btn btn__primary popular__btn" type="button">
                 Заказать
@@ -121,6 +123,8 @@
               />
             </figure>
           </article>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section class="catalog">
@@ -198,7 +202,7 @@
         </div>
       </section>
       <article class="discount">
-        <div class="container container__discount">
+        <div class="container discount__container">
           <section class="discount__content">
             <h2
               class="
@@ -206,7 +210,7 @@
                 discount__content__title
               "
             >
-              Популярные букеты
+              Скидка 10% <span class="d-block">на первый заказ</span>
             </h2>
             <p class="discount__content-text">
               Если заказываете у нас букет впервые — при оформлении заказа
@@ -225,29 +229,31 @@
       </article>
       <section class="step">
         <div class="container step__container">
-          <h2 class="title title__regular">4 шага к идеальному букету</h2>
+          <h2 class="title title__regular step__title">
+            4 шага к идеальному букету
+          </h2>
           <dl class="step__list">
             <div class="step__group">
-              <dt class="term step__list-term">Заказ</dt>
+              <dt class="subtitle step__list-term">Заказ</dt>
               <dd class="step__list-text">
-                Выбирите понравившейся букет из каталога и оформите заказ
+                Выберите понравившейся букет из каталога и оформите заказ
               </dd>
             </div>
             <div class="step__group">
-              <dt class="term step__list-term">Уточнение деталей</dt>
+              <dt class="subtitle step__list-term">Уточнение деталей</dt>
               <dd class="step__list-text">
                 Наш флорист позвонит вам после оформления заказа, чтобы уточнить
                 детали
               </dd>
             </div>
             <div class="step__group">
-              <dt class="term step__list-term">Оплата</dt>
+              <dt class="subtitle step__list-term">Оплата</dt>
               <dd class="step__list-text">
                 Оплатить заказ можно онлайн на сайте или при получении
               </dd>
             </div>
             <div class="step__group">
-              <dt class="term step__list-term">Доставка</dt>
+              <dt class="subtitle step__list-term">Доставка</dt>
               <dd class="step__list-text">
                 Курьер позвонит за час до прибытия и доставит заказ вовремя
               </dd>
@@ -265,7 +271,7 @@
               >Подписывайтесь на наши соцсети и узнавайте о новинках и акциях
               первым.</span
             >
-            <ul class="social blog__social">
+            <ul class="list-reset social blog__social">
               <li class="social__item">
                 <a
                   href="#"
@@ -330,7 +336,7 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="container container__reviews">
+        <div class="container reviews__container">
           <h2 class="title title__regular reviews__title">Отзывы</h2>
           <div class="reviews__inner">
             <blockquote class="reviews__descr">
@@ -338,21 +344,23 @@
                 Всё очень понравилось! Быстрое оформление заказа, выбор удобного
                 времени доставки. Всем большое спасибо!
               </p>
-              <cite class="reviews__descr-author">Марина</cite>
+              <cite class="subtitle d-block reviews__descr-author">Марина</cite>
             </blockquote>
             <blockquote class="reviews__descr">
               <p class="reviews__list-text">
                 Внимательные флористы, вежливые. Магазин находится прям рядом с
                 метро. Букет очень понравился, буду ещё заказывать!
               </p>
-              <cite class="reviews__descr-author">Татьяна</cite>
+              <cite class="subtitle d-block reviews__descr-author"
+                >Татьяна</cite
+              >
             </blockquote>
             <blockquote class="reviews__descr">
               <p class="reviews__list-text">
                 Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а
                 флористы всегда помогут и точно соберут красивый букет!
               </p>
-              <cite class="reviews__descr-author">Ольга</cite>
+              <cite class="subtitle d-block reviews__descr-author">Ольга</cite>
             </blockquote>
           </div>
         </div>
@@ -367,26 +375,28 @@
           />
           <figcaption class="contact__media-info">
             <h2 class="title title__regular contact__title">Мы ждем вас</h2>
-            <ul class="contact__list">
+            <ul class="list-reset contact__list">
               <li class="contact__item">
-                Приходите к нам:
-                <address class="contact__val">
+                <span class="contact__label">Приходите к нам:</span>
+                <address class="subtitle contact__val">
                   Санкт-Петербург, ул. Большая Конюшенная, 19
                 </address>
               </li>
               <li class="contact__item">
-                Режим работы:
-                <span class="contact__val">Пн-Вск, с 9-00 до 20-00</span>
+                <span class="contact__label">Режим работы:</span>
+                <span class="subtitle contact__val"
+                  >Пн-Вск, с 9-00 до 20-00</span
+                >
               </li>
               <li class="contact__item">
-                Позвоните нам:
-                <a href="tel:+78129834719" class="contact__val"
+                <span class="contact__label">Позвоните нам:</span>
+                <a href="tel:+78129834719" class="subtitle contact__val"
                   >+ 7 (812) 983-47-19</a
                 >
               </li>
               <li class="contact__item">
-                Напишите нам:
-                <a href="mailto:info@botanika.ru" class="contact__val"
+                <span class="contact__label">Напишите нам:</span>
+                <a href="mailto:info@botanika.ru" class="subtitle contact__val"
                   >info@botanika.ru</a
                 >
               </li>
@@ -405,7 +415,7 @@
             width="100"
           />
         </a>
-        <ul class="menu footer__list">
+        <ul class="list-reset menu footer__list">
           <li class="menu__item">
             <a href="#" class="menu__link">Каталог</a>
           </li>
@@ -422,7 +432,7 @@
             <a href="#" class="menu__link">Контакты</a>
           </li>
         </ul>
-        <ul class="social footer__social">
+        <ul class="list-reset social footer__social">
           <li class="social__item">
             <a
               href="#"
