@@ -57,7 +57,7 @@
               >Смотреть каталог</a
             >
           </div>
-          <figure class="promo__media">
+          <figure class="media-reset promo__media">
             <img
               src="./images/promo-1.jpg"
               alt="свежий свадебный букет"
@@ -76,20 +76,20 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="container advantages__container">
           <dl class="advantages__list">
-            <div class="advantages__group">
+            <div class="advantages__group advantages__group--delivery">
               <dt class="advantages__list-term">Быстрая доставка</dt>
               <dd class="advantages__list-text">
                 Можем собрать букет и передать его в доставку всего за час.
               </dd>
             </div>
-            <div class="advantages__group">
+            <div class="advantages__group advantages__group--bouquet">
               <dt class="advantages__list-term">Всегда свежие цветы</dt>
               <dd class="advantages__list-text">
                 Тщательно следим за состоянием цветов, а опытные флористы
                 отбирают для букетов каждый цветок.
               </dd>
             </div>
-            <div class="advantages__group">
+            <div class="advantages__group advantages__group--photo">
               <dt class="advantages__list-term">Отправляем фото цветов</dt>
               <dd class="advantages__list-text">
                 Перед доставкой сделаем фотографию букета и отправим вам.
@@ -114,7 +114,7 @@
                 Заказать
               </button>
             </div>
-            <figure class="popular__slide-media">
+            <figure class="media-reset popular__slide-media">
               <img
                 src="./images/slide-1.png"
                 alt="популярный букет нежность"
@@ -123,8 +123,8 @@
               />
             </figure>
           </article>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev arrow arrow--prev"></div>
+          <div class="swiper-button-next arrow arrow--next"></div>
         </div>
       </section>
       <section class="catalog">
@@ -132,8 +132,8 @@
           Каталог букетов к свадьбе, празднику и на каждый день
         </h2>
         <div class="container catalog__container">
-          <a href="#" class="catalog__link">
-            <figure class="catalog__media">
+          <a href="#" class="d-block catalog__link">
+            <figure class="media-reset d-block catalog__media">
               <img
                 src="./images/bridal-bouquet.jpg"
                 alt="свадебные букеты"
@@ -149,12 +149,14 @@
                 >
                   Свадебные букеты
                 </h3>
-                <span class="catalog__media-subtitle">Букеты для невест</span>
+                <span class="d-block catalog__media-subtitle"
+                  >Букеты для невест</span
+                >
               </figcaption>
             </figure>
           </a>
-          <a href="#" class="catalog__link">
-            <figure class="catalog__media">
+          <a href="#" class="d-block catalog__link">
+            <figure class="media-reset d-block catalog__media">
               <img
                 src="./images/bouquet-peonies.jpg"
                 alt="Букеты с пионами"
@@ -170,14 +172,14 @@
                 >
                   Букеты с пионами
                 </h3>
-                <span class="catalog__media-subtitle"
+                <span class="d-block catalog__media-subtitle"
                   >Букеты с сезонными пионами</span
                 >
               </figcaption>
             </figure>
           </a>
-          <a href="#" class="catalog__link">
-            <figure class="catalog__media">
+          <a href="#" class="d-block catalog__link">
+            <figure class="media-reset d-block catalog__media">
               <img
                 src="./images/choose-bouquet.jpg"
                 alt="Букеты в ассортименте"
@@ -193,7 +195,7 @@
                 >
                   Выбрать букет
                 </h3>
-                <span class="catalog__media-subtitle"
+                <span class="d-block catalog__media-subtitle"
                   >Букеты в ассортименте</span
                 >
               </figcaption>
@@ -233,26 +235,26 @@
             4 шага к идеальному букету
           </h2>
           <dl class="step__list">
-            <div class="step__group">
+            <div class="step__group step__group--order">
               <dt class="subtitle step__list-term">Заказ</dt>
               <dd class="step__list-text">
                 Выберите понравившейся букет из каталога и оформите заказ
               </dd>
             </div>
-            <div class="step__group">
+            <div class="step__group step__group--consultation">
               <dt class="subtitle step__list-term">Уточнение деталей</dt>
               <dd class="step__list-text">
                 Наш флорист позвонит вам после оформления заказа, чтобы уточнить
                 детали
               </dd>
             </div>
-            <div class="step__group">
+            <div class="step__group step__group--payment">
               <dt class="subtitle step__list-term">Оплата</dt>
               <dd class="step__list-text">
                 Оплатить заказ можно онлайн на сайте или при получении
               </dd>
             </div>
-            <div class="step__group">
+            <div class="step__group step__group--delivery">
               <dt class="subtitle step__list-term">Доставка</dt>
               <dd class="step__list-text">
                 Курьер позвонит за час до прибытия и доставит заказ вовремя
@@ -271,43 +273,25 @@
               >Подписывайтесь на наши соцсети и узнавайте о новинках и акциях
               первым.</span
             >
-            <ul class="list-reset social blog__social">
+            <ul class="list-reset d-flex social blog__social">
               <li class="social__item">
-                <a
-                  href="#"
-                  class="
-                    visually-hidden
-                    social-icon social-icon--insta
-                    social__link
-                  "
-                  >instagram</a
+                <a href="#" class="social__link social-icon social-icon--insta"
+                  ><span class="visually-hidden">instagram</span></a
                 >
               </li>
               <li class="social__item">
-                <a
-                  href="#"
-                  class="
-                    visually-hidden
-                    social-icon social-icon--fb
-                    social__link
-                  "
-                  >facebook</a
+                <a href="#" class="social__link social-icon social-icon--fb"
+                  ><span class="visually-hidden">facebook</span></a
                 >
               </li>
               <li class="social__item">
-                <a
-                  href="#"
-                  class="
-                    visually-hidden
-                    social-icon social-icon--tw
-                    social__link
-                  "
-                  >twitter</a
+                <a href="#" class="social__link social-icon social-icon--tw"
+                  ><span class="visually-hidden">twitter</span></a
                 >
               </li>
             </ul>
           </div>
-          <figure class="blog__media">
+          <figure class="media-reset blog__media">
             <a href="#" class="blog__media-link">
               <img
                 src="./images/blog-1.jpg"
@@ -366,7 +350,7 @@
         </div>
       </section>
       <section class="contact">
-        <figure class="contact__media">
+        <figure class="media-reset contact__media">
           <img
             src="./images/map.jpg"
             alt="Как добраться до botanika"
@@ -409,7 +393,7 @@
       <div class="container footer__container">
         <a class="logo footer__logo">
           <img
-            src="./images/logo.svg"
+            src="./images/logo_о.svg"
             alt="логотип компании Botanika"
             class="logo__img"
             width="100"
@@ -432,7 +416,7 @@
             <a href="#" class="menu__link">Контакты</a>
           </li>
         </ul>
-        <ul class="list-reset social footer__social">
+        <ul class="list-reset d-flex social footer__social">
           <li class="social__item">
             <a
               href="#"

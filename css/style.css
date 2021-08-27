@@ -65,11 +65,19 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 body {
-  font: 400 16px/1.219 "Montserrat", sans-serif;
+  font: 400 16px/1.219 "Montserrat", "Arial", "Helvetica CY", "Nimbus Sans L",
+    sans-serif;
   color: #ae7c78;
 }
 .container {
+  max-width: calc(1200px + 16px * 2);
+  padding: 0 16px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -81,6 +89,10 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
+.media-reset {
+  margin: 0;
+  font-size: 0;
+}
 .list-reset {
   margin: 0;
   padding: 0;
@@ -89,11 +101,21 @@ body {
 .d-block {
   display: block;
 }
+.d-flex {
+  display: flex;
+}
 
 /* ЛОГОТИП */
 .logo {
+  display: inline-block;
+  width: 100px;
+  height: 33px;
 }
 .logo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* МЕНЮ */
@@ -121,7 +143,6 @@ body {
 }
 .title__regular {
   font-size: 36px;
-  font-weight: bold;
   line-height: 1.333;
   letter-spacing: 0.02em;
   text-align: center;
@@ -156,23 +177,62 @@ body {
   border-radius: 40px;
 }
 
-/* СОЦ.СЕТИ */
-.social {
+/* СТРЕЛКИ */
+.arrow {
+  width: 50px;
+  height: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.social__item {
+.arrow--prev {
+  background-image: url("../images/icons/arrow-prev.svg");
 }
-.social-icon {
-}
-.social__link {
-}
-.social-icon--insta {
-}
-.social-icon--fb {
-}
-.social-icon--tw {
+.arrow--next {
+  background-image: url("../images/icons/arrow-next.svg");
 }
 
-/*  */
+/* СОЦ.СЕТИ */
+.social {
+  align-items: center;
+}
+.social__item {
+  font-size: 0;
+}
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+.social__link {
+  display: inline-block;
+}
+.social-icon {
+  position: relative;
+  padding-left: 26px;
+  width: 26px;
+  height: 20px;
+}
+.social-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.social-icon--insta::before {
+  background-image: url("../images/icons/instagram_icon.svg");
+}
+.social-icon--fb::before {
+  background-image: url("../images/icons/facebook_icon.svg");
+}
+.social-icon--tw::before {
+  background-image: url("../images/icons/twitter_icon.svg");
+}
+
+/* ЗАГОЛОВОК */
 .header {
   padding: 16px 0;
   border-top: 1px solid #ae7c78;
@@ -184,6 +244,8 @@ body {
 }
 .header__logo {
 }
+
+/* МЕНЮ */
 .nav {
 }
 .nav__list {
@@ -206,6 +268,7 @@ body {
 .promo__media {
 }
 .promo__media-img {
+  border-radius: 10px;
 }
 
 /* ПРЕИМУЩЕСТВА */
@@ -216,6 +279,28 @@ body {
 .advantages__list {
 }
 .advantages__group {
+  position: relative;
+  padding-left: 100px;
+}
+.advantages__group::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 52px;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.advantages__group--delivery::before {
+  background-image: url("../images/icons/delivery.svg");
+}
+.advantages__group--bouquet::before {
+  background-image: url("../images/icons/bouquet.svg");
+}
+.advantages__group--photo::before {
+  background-image: url("../images/icons/photo.svg");
 }
 .advantages__list-term {
   font-weight: 500;
@@ -254,25 +339,59 @@ body {
 }
 .popular__slide-img {
 }
+.swiper-button-prev {
+}
 
 /* КАТАЛОГ */
 .catalog {
 }
 .catalog__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(440px, autp);
+  gap: 19px;
+}
+.catalog__link,
+.catalog__media {
+  height: 100%;
 }
 .catalog__link {
+  border-radius: 10px;
+  overflow: hidden;
 }
 .catalog__media {
+  position: relative;
+}
+.catalog__media::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(174, 124, 120, 0.6);
 }
 .catalog__media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .catalog__media-descr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
 }
 .catalog__media-title {
   margin-bottom: 8px;
 }
 .catalog__media-subtitle {
+  font-size: 16px;
+  line-height: 1.25;
   color: #fff;
+  text-align: center;
 }
 
 /* СКИДКИ */
@@ -280,6 +399,7 @@ body {
 }
 .discount__container {
   background-color: #ae7c78;
+  background-clip: content-box;
 }
 .discount__content {
   padding: 40px 120px 60px 100px;
@@ -307,6 +427,31 @@ body {
 .step__list {
 }
 .step__group {
+  position: relative;
+  padding-top: 60px;
+}
+.step__group::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.step__group--order::before {
+  background-image: url("../images/icons/order.svg");
+}
+.step__group--consultation::before {
+  background-image: url("../images/icons/consultation.svg");
+}
+.step__group--payment::before {
+  background-image: url("../images/icons/payment.svg");
+}
+.step__group--delivery::before {
+  background-image: url("../images/icons/delivery.svg");
 }
 .step__list-term {
   margin-bottom: 8px;
