@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="section header">
       <div class="container header__container">
         <nav class="nav header__nav">
           <a class="logo header__logo">
@@ -18,9 +18,10 @@
               alt="логотип компании Botanika"
               class="logo__img"
               width="100"
+              height="33"
             />
           </a>
-          <ul class="list-reset menu nav__list">
+          <ul class="list-reset d-flex menu nav__list">
             <li class="menu__item">
               <a href="#" class="menu__link">Каталог</a>
             </li>
@@ -30,7 +31,7 @@
             <li class="menu__item">
               <a href="#" class="menu__link">Отзывы</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item--offset">
               <a href="#" class="menu__link">Спецпредложения</a>
             </li>
             <li class="menu__item">
@@ -44,20 +45,20 @@
       </div>
     </header>
     <main>
-      <section class="promo">
-        <div class="container promo__container">
+      <section class="section promo">
+        <div class="container d-flex promo__container">
           <div class="promo__content">
             <h1 class="title title__primary promo__title">
               Авторские букеты <span class="d-block">в Петербурге</span>
             </h1>
-            <span class="promo__slogan">
+            <span class="d-block promo__slogan">
               Оригинальные свежие букеты с доставкой по всему городу
             </span>
             <a href="#" class="btn btn__primary promo__link"
               >Смотреть каталог</a
             >
           </div>
-          <figure class="media-reset promo__media">
+          <figure class="media-reset d-grid promo__media">
             <img
               src="./images/promo-1.jpg"
               alt="свежий свадебный букет"
@@ -72,10 +73,10 @@
           </figure>
         </div>
       </section>
-      <section class="advantages">
+      <section class="section advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="container advantages__container">
-          <dl class="advantages__list">
+          <dl class="d-grid advantages__list">
             <div class="advantages__group advantages__group--delivery">
               <dt class="advantages__list-term">Быстрая доставка</dt>
               <dd class="advantages__list-text">
@@ -98,10 +99,10 @@
           </dl>
         </div>
       </section>
-      <section class="popular">
+      <section class="section popular">
         <div class="container popular__container">
           <h2 class="title title__regular popular__title">Популярные букеты</h2>
-          <article class="popular__slide">
+          <article class="d-flex popular__slide">
             <div class="popular__slide-info">
               <h3 class="subtitle popular__slide-subtitle">Букет «Нежность»</h3>
               <p class="popular__slide-text">
@@ -127,7 +128,7 @@
           <div class="swiper-button-next arrow arrow--next"></div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="section catalog">
         <h2 class="visually-hidden">
           Каталог букетов к свадьбе, празднику и на каждый день
         </h2>
@@ -203,21 +204,25 @@
           </a>
         </div>
       </section>
-      <article class="discount">
-        <div class="container discount__container">
-          <section class="discount__content">
-            <h2
-              class="
-                title title__regular title__regular--discount
-                discount__content__title
-              "
-            >
-              Скидка 10% <span class="d-block">на первый заказ</span>
-            </h2>
-            <p class="discount__content-text">
-              Если заказываете у нас букет впервые — при оформлении заказа
-              введите промокод «Botanika2021» и получите скидку 10%.
-            </p>
+      <article class="section discount">
+        <div class="container d-flex discount__container">
+          <section class="d-flex discount__content">
+            <div class="discount__content-inner">
+              <h2
+                class="
+                  title title__regular title__regular--discount
+                  discount__content__title
+                "
+              >
+                Скидка 10% <span class="d-block">на первый заказ</span>
+              </h2>
+              <div class="discount__content-text">
+                <p>
+                  Если заказываете у нас букет впервые — при оформлении заказа
+                  введите промокод «Botanika2021» и получите скидку 10%.
+                </p>
+              </div>
+            </div>
           </section>
           <aside class="discount__media">
             <img
@@ -229,7 +234,7 @@
           </aside>
         </div>
       </article>
-      <section class="step">
+      <section class="section step">
         <div class="container step__container">
           <h2 class="title title__regular step__title">
             4 шага к идеальному букету
@@ -263,7 +268,7 @@
           </dl>
         </div>
       </section>
-      <section class="blog">
+      <section class="section blog">
         <div class="container blog__container">
           <div class="blog__content">
             <h2 class="title title__regular blog__title">
@@ -319,7 +324,7 @@
           </figure>
         </div>
       </section>
-      <section class="reviews">
+      <section class="section reviews">
         <div class="container reviews__container">
           <h2 class="title title__regular reviews__title">Отзывы</h2>
           <div class="reviews__inner">
@@ -399,7 +404,7 @@
             width="100"
           />
         </a>
-        <ul class="list-reset menu footer__list">
+        <ul class="list-reset d-flex menu footer__list">
           <li class="menu__item">
             <a href="#" class="menu__link">Каталог</a>
           </li>
