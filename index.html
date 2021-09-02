@@ -124,8 +124,10 @@
               />
             </figure>
           </article>
-          <div class="swiper-button-prev arrow arrow--prev"></div>
-          <div class="swiper-button-next arrow arrow--next"></div>
+          <div class="d-flex popular__navigation">
+            <div class="swiper-button-prev arrow arrow--prev"></div>
+            <div class="swiper-button-next arrow arrow--next"></div>
+          </div>
         </div>
       </section>
       <section class="section catalog">
@@ -269,12 +271,12 @@
         </div>
       </section>
       <section class="section blog">
-        <div class="container blog__container">
+        <div class="container d-flex blog__container">
           <div class="blog__content">
             <h2 class="title title__regular blog__title">
               Следите за нашими новостями
             </h2>
-            <span class="blog__descr"
+            <span class="d-block blog__descr"
               >Подписывайтесь на наши соцсети и узнавайте о новинках и акциях
               первым.</span
             >
@@ -296,7 +298,7 @@
               </li>
             </ul>
           </div>
-          <figure class="media-reset blog__media">
+          <figure class="media-reset d-grid blog__media">
             <a href="#" class="blog__media-link">
               <img
                 src="./images/blog-1.jpg"
@@ -305,7 +307,7 @@
                 width="285"
               />
             </a>
-            <a href="#" class="blog__media-link">
+            <a href="#" class="blog__media-link blog__media-link--big">
               <img
                 src="./images/blog-2.jpg"
                 alt="букет с пионами"
